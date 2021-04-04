@@ -18,4 +18,8 @@ module Textgem
   def repliecheck(webhook)
     system("curl https://#{webhook}/api/handleSmsReply")
   end
+  
+  def sendsms(apikey="textbelt")
+    system("curl -X POST https://textbelt.com/text --data-urlencode phone='304033489438938' --data-urlencode message='hi' -d key=#{apikey}_test")
+  end
 end
