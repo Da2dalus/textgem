@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Ruby module that interacts with the textbelt api.}
   spec.description   = %q{Ruby module that interacts with the textbelt api.}
-  spec.homepage      = "https://github.com/Da2alus/textgem"
+  spec.homepage      = "https://github.com/Da2dalus/textgem"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
   spec.metadata["allowed_push_host"] = "https://rubygems.org"
