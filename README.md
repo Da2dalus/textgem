@@ -1,6 +1,5 @@
 # Textgem
 [![Gem Version](https://badge.fury.io/rb/textgem.svg)](https://badge.fury.io/rb/textgem)
-#
 
 This is a ruby module that can be used to interact with the
 textbelt api (textbelt.com)
