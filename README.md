@@ -25,18 +25,27 @@ Or install it yourself as:
 ```ruby
 Textgem.sendsms("phone", "message", "textbelt_api_key", "webhook")
 ```
+Saves JSON output in the variable *smsoutput*. Parsed JSON output is saved in *sms* (hash).
+
 ```ruby
 Textgem.quota("textbelt_api_key")
 ```
+Saves JSON output in the variable *quotaoutput*. Parsed JSON output is saved in *quota* (hash).
+
 ```ruby
 Textgem.status("textid")
 ```
+Saves JSON output in the variable *statusoutput*. Parsed JSON output is saved in *status* (hash).
+
 ```ruby
 Textgem.repliecheck("webhook")
 ```
+Saves JSON output in the variable *replieoutput*. Parsed JSON output is saved in *replie* (hash).
+
 ```ruby
 Textgem.testsms("textbelt_api_key")
 ```
+Saves JSON output in the variable *testsmsoutput*. Parsed JSON output is saved in *testsms* (hash).
 
 ## Development
 
