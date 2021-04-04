@@ -33,6 +33,9 @@ Textgem.status("textid")
 ```ruby
 Textgem.repliecheck("webhook")
 ```
+```ruby
+Textgem.testsms("textbelt_api_key")
+```
 
 ## Development
 
