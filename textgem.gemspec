@@ -5,6 +5,8 @@ Gem::Specification.new do |spec|
   spec.version       = Textgem::VERSION
   spec.authors       = ["Da2dalus"]
   spec.email         = ["dinovitolalala@protonmail.com"]
+  
+  s.licenses = ['MIT']
 
   spec.summary       = %q{Ruby module that interacts with the textbelt api.}
   spec.description   = %q{Ruby module that interacts with the textbelt api.}
