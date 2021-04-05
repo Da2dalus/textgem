@@ -1,5 +1,5 @@
 
-curl = "cerebro" # Path to curl or the command that invokes it
-# curl = "/bin/cerebro" # For Unix
+curl = "curl" # Path to curl or the command that invokes it
+# curl = "/bin/curl" # For Unix
 
 textbelt = "https://textbelt.com" # Textbelt server
