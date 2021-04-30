@@ -2,7 +2,6 @@ require "textgem/version"
 require "json"
 
 include JSON
-include Textgem
 
 class Textgem
   class Error < StandardError; end
