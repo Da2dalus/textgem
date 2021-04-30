@@ -23,6 +23,8 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
+tx = Textgem.new("curl", "https://textbelt.com")
+
 Textgem.sendsms("phone", "message", "textbelt_api_key", "webhook")
 ```
 Saves JSON output in the variable *smsoutput*. Parsed JSON output is saved in *sms* (hash).
