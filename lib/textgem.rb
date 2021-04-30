@@ -13,35 +13,35 @@ class Textgem
     
   end
   
-  def self.sendsms(phone, sms, apikey="textbelt", webhook="textbelt.com")
+  def sendsms(phone, sms, apikey="textbelt", webhook="textbelt.com")
     
     smsoutput = `#{@@curl} -X POST #{@@textbelt}/text --data-urlencode phone='#{phone}' --data-urlencode message='#{sms}' -d replyWebhookUrl='https://#{webhook}/api/handleSmsReply' -d key=#{apikey}`
     puts smsoutput
     sms = JSON.parse(smsoutput)
   end
 
-  def self.quota(apikey="textbelt")
+  def quota(apikey="textbelt")
     
     quotaoutput = `#{@@curl} #{@@textbelt}/quota/#{apikey}`
     puts quotaoutput
     quota = JSON.parse(quotaoutput)
   end
 
-  def self.status(textid)
+  def status(textid)
     
     statusoutput = `#{@@curl} #{@@textbelt}/status/#{textid}`
     puts statusoutput
     status = JSON.parse(statusoutput)
   end
 
-  def self.repliecheck(webhook)
+  def repliecheck(webhook)
     
     replieoutput = `#{@@curl} #{@@webhook}/api/handleSmsReply`
     puts replieoutput
     replie = JSON.parse(replieoutput)
   end
 
-  def self.testsms(apikey="textbelt")
+  def testsms(apikey="textbelt")
     
     testsmsoutput = `#{@@curl} -X POST #{@@textbelt}/text --data-urlencode phone='304033489438938' --data-urlencode message='hi' -d key=#{apikey}_test`
     puts testsmsoutput
